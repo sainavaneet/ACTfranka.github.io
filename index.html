@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ACTfranka: Applying Action Chunck Transformer on Franka Robot">
+  <meta name="keywords" content="Robotics, Mobile Manipulation, Bimanual Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACTFranka</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ACTFranka: Action Chunck Transformer on Franka robot</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Navaneet</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Manisha</a><sup>2</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Supervisor : Prof Sangmoon Lee</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Kyungpook National University ,</span>
+            <span class="author-block">Physical Intelligence Lab</span>
+          </div>
+
+
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+          
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2304.13705"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Original Papper</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this project, we adapt the Action Chunk Transformer (ACT), originally designed for mobile robotic platforms as demonstrated in the Mobile Aloha framework, for use in industrial robotics, specifically targeting the Franka robot for pick-and-place tasks. The ACT model is renowned for its ability to enhance sequence learning and interactive capabilities in dynamic environments, attributes crucial for the precision and adaptability required in industrial settings.
+          </p>
+          <p>
+            To achieve this adaptation, we modified the ACT’s architecture to meet the unique kinematic and sensory requirements of the Franka robot. This allowed the robot to efficiently process and execute complex sequences of spatial tasks. Our approach involved integrating aspects of transformer technology, which are pivotal for managing sequential and contextual data in real time.
+          </p>
+          <p>
+            Initial results indicate a marked improvement in the robot’s task execution speed and accuracy, showcasing the transformative potential of transformer technology in robotic systems. This adaptation not only extends the functional reach of the ACT model from mobile to stationary robots but also highlights the broader applicability and significant benefits of transformer-based models in advancing robotic autonomy and operational efficiency in complex industrial environments.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="publication-image2">
+          <img src="assets\architecture.jpg" alt="Descriptive text about the image">
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Env -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        
+        <div class="publication-content">
+          <div class="text-content">
+            <h2 class="title is-3">Setup</h2>
+          </div>
+          <div class="publication-image">
+            <img src="assets/env.jpg" alt="Descriptive text about the image" class="responsive-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Results</h2>
+  </div>
+</div>
+
+<section class="hero is-light is-small">
+  
+  <div class="hero-body">
+  
+    <div class="container">
+    
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0473.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0474.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0475.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0476.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0477.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets\iCloud Photos\IMG_0478.MP4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
