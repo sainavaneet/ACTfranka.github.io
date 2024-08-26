@@ -192,3 +192,14 @@ body {
 .publication-image2 {
   width: 100%; 
 }
+.publication-image3  {
+  width: 50%;
+  height: auto; /* This maintains the aspect ratio of the image */
+}
+.responsive-image2 {
+  width: 100%; /* The image will take up 100% of the .publication-image container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+  margin: 0 auto; /* Center the image horizontally within the container */
+  border: 2px solid #000; /* Adds a black border, adjust color and size as needed */
+}
