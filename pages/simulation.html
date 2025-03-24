@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="ACTfranka: Applying Action Chunck Transformer on Franka Robot">
+  <meta name="description" content="ACTfranka: Applying Action Chunk Transformer on Franka Robot">
   <meta name="keywords" content="Robotics, Mobile Manipulation, Bimanual Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ACTFranka: Simulation</title>
@@ -11,11 +11,14 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
+  <!-- Fonts and Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/bulma.min.css">
   <link rel="stylesheet" href="/static/css/bulma-carousel.min.css">
@@ -25,6 +28,7 @@
   <link rel="stylesheet" href="/static/css/index.css">
   <link rel="icon" href="/static/images/favicon.svg">
 
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="/static/js/fontawesome.all.min.js"></script>
   <script src="/static/js/bulma-carousel.min.js"></script>
@@ -32,138 +36,144 @@
   <script src="/static/js/index.js"></script>
 </head>
 <body>
-  <section class="hero">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ACTFranka: Simulation</h1>
+          <div class="publication-links">
+            <!-- Code Link -->
+            <span class="link-block">
+              <a href="https://github.com/sainavaneet/ACTfranka" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+            </span>
+            <!-- Home Link -->
+            <span class="link-block">
+              <a href="https://sainavaneet.github.io/ACTfranka.github.io/" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span>Home</span>
+              </a>
+            </span>
+            <!-- PPT Link -->
+            <span class="link-block">
+              <a href="ppt.html" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-powerpoint"></i></span>
+                <span>PPT</span>
+              </a>
+            </span>
+            <!-- Dataset Link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2304.13705" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="far fa-images"></i></span>
+                <span>Original Paper</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Setup</h2>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-image3">
+          <img src="/ACTfranka.github.io/pages/assets/sim_env.png" alt="Simulation environment">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Demonstration</h2>
+  </div>
+</div>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ACTFranka: Simulation</h1>
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://github.com/sainavaneet/ACTfranka" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://sainavaneet.github.io/ACTfranka.github.io/" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-home"></i></span>
-                  <span>Home</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="ppt.html" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-home"></i></span>
-                  <span>PPT</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2304.13705" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="far fa-images"></i></span>
-                  <span>Original Paper</span>
-                </a>
-              </span>
-            </div>
-          </div>
+      <video id="teaser" autoplay muted loop playsinline>
+        <source src="/ACTfranka.github.io/pages/assets/demo.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">Demonstration in Gazebo simulator</h2>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Loss</h2>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-image3">
+          <img src="/ACTfranka.github.io/pages/assets/loss.png" alt="Loss graph">
         </div>
       </div>
     </div>
-  </section>
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Setup</h2>
-    </div>
   </div>
+</section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-image3">
-            <img src="/ACTfranka.github.io/pages/assets/sim_env.png" alt="Simulation Environment">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Demonstration</h2>
-    </div>
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Results</h2>
   </div>
+</div>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="/ACTfranka.github.io/pages/assets/demo.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">Demonstration in Gazebo simulator</h2>
-      </div>
-    </div>
-  </section>
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Loss</h2>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-image3">
-            <img src="/ACTfranka.github.io/pages/assets/loss.png" alt="Loss Graph">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Results</h2>
-    </div>
-  </div>
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="/ACTfranka.github.io/pages/assets/Media1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="/ACTfranka.github.io/pages/assets/Media2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="/ACTfranka.github.io/pages/assets/Media3.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="/ACTfranka.github.io/pages/assets/Media3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
+<section class="hero is-light is-small">
+  <div class="hero-body">
     <div class="container">
-      <div class="content has-text-centered">
-        <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a></p>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video id="steve" autoplay controls muted loop playsinline>
+            <source src="/ACTfranka.github.io/pages/assets/Media1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video id="chair-tp" autoplay controls muted loop playsinline>
+            <source src="/ACTfranka.github.io/pages/assets/Media2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video id="shiba" autoplay controls muted loop playsinline>
+            <source src="/ACTfranka.github.io/pages/assets/Media3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video id="fullbody" autoplay controls muted loop playsinline>
+            <source src="/ACTfranka.github.io/pages/assets/Media3.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a></p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
