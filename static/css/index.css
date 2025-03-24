@@ -203,3 +203,10 @@ body {
   margin: 0 auto; /* Center the image horizontally within the container */
   border: 2px solid #000; /* Adds a black border, adjust color and size as needed */
 }
+
+
+.original-size-image {
+  max-width:200%; /* Ensures the image doesn't exceed the container width */
+  height: auto;    /* Maintains the aspect ratio */
+  width: auto;     /* Allows the image to be displayed at its original width */
+}
